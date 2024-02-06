@@ -1,24 +1,20 @@
 {
-  "name": "http-proxy",
+  "name": "http-proxy-x",
   "version": "1.18.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/http-party/node-http-proxy.git"
+    "url": "https://github.com/un-es/http-proxy-x.git"
   },
-  "description": "HTTP proxying for the masses",
-  "author": "Charlie Robbins <charlie.robbins@gmail.com>",
-  "maintainers": [
-    "jcrugzz <jcrugzz@gmail.com>"
-  ],
+  "description": "An active maintained fork of `http-proxy`",
+  "author": "JounQin (https://www.1stG.me) <admin@1stg.me>",
   "main": "index.js",
   "dependencies": {
     "eventemitter3": "^4.0.0",
-    "requires-port": "^1.0.0",
-    "follow-redirects": "^1.0.0"
+    "follow-redirects": "^1.0.0",
+    "requires-port": "^1.0.0"
   },
   "devDependencies": {
     "async": "^3.0.0",
-    "auto-changelog": "^1.15.0",
     "concat-stream": "^2.0.0",
     "expect.js": "~0.3.1",
     "mocha": "^3.5.3",
@@ -31,8 +27,7 @@
   },
   "scripts": {
     "mocha": "mocha test/*-test.js",
-    "test": "nyc --reporter=text --reporter=lcov npm run mocha",
-    "version": "auto-changelog -p && git add CHANGELOG.md"
+    "test": "nyc --reporter=text --reporter=lcov npm run mocha"
   },
   "engines": {
     "node": ">=8.0.0"
